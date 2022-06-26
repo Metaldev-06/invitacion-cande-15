@@ -2,11 +2,17 @@
     // music.play();
     // music.volume = 0.05;
     const music = new Audio('https://cdn.discordapp.com/attachments/963137601152364554/990720799352701020/musica-prueba-2.mp3');
-    music.autoplay = true;
-    music.play();
-    music.volume = 0.05;
-    music.loop = true;
-    //music.playbackRate = 1;
+
+    window.addEventListener('scroll', () =>{
+        if (window.scrollY > 0) {
+            music.play();
+            music.autoplay = true;
+            music.volume = 0.05;
+            music.loop = true;
+            //music.playbackRate = 1;
+        }
+    });
+
 
 window.addEventListener('scroll', () =>{
     let header = document.querySelector('.header-container')
