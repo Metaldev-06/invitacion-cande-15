@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 $colorHoverBTN: #F82E16;
+$colorGrey: #EEEEEE;
 
 $breakpoints: (
     fold: 415px,
@@ -213,7 +214,7 @@ h1, h2 {
 
     .section-3 {
         height: 60vh;
-        background-color: lightgrey;
+        background-color: $colorGrey;
         overflow: hidden;
         @include media-up(xxl){
             height: 70vh;
@@ -308,7 +309,7 @@ h1, h2 {
     }
 
     .section-5 {
-        background-color: lightgrey;
+        background-color: $colorGrey;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -382,7 +383,7 @@ h1, h2 {
     }
 
     .section-7 {
-        background-color: lightgrey;
+        background-color: $colorGrey;
         text-align: center;
         display: flex;
         flex-direction: column;
