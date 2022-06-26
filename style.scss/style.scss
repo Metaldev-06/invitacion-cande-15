@@ -3,7 +3,7 @@
 $colorHoverBTN: #F82E16;
 
 $breakpoints: (
-    fold: 320px,
+    fold: 415px,
     lg : 396px,
     ls : 413,
     xl : 500px,
@@ -179,7 +179,9 @@ h1, h2 {
         }
     }
     .section-1 {
-        // background-color: aqua;
+        h2 {
+            color: #F82E16;
+        }
         .article-2 {
             .table {
                 width: 90%;
@@ -192,6 +194,9 @@ h1, h2 {
     }
     .section-2 {
         border-radius: 0 0 5px 5px;
+        h2 {
+            color: #F82E16;
+        }
         .article-3 {
             height: 100%;
             p {
@@ -251,6 +256,7 @@ h1, h2 {
                 flex-direction: column;
                 justify-content: space-around;
                 h2 {
+                    color: #F82E16;
                     margin-bottom: 50px;
                     font-size: 2em;
                     @include media-up(xxl){
@@ -279,6 +285,9 @@ h1, h2 {
             }
             .container-title {
                 padding: 20px 0 20px 0;
+                h2 {
+                    color: #F82E16;
+                }
                 @include media-up(xl){
                     padding: 10px 0 10px 0;
                 }
@@ -319,9 +328,10 @@ h1, h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 5px 5px;
         h2 {
             padding: 10px;
+            color: #F82E16;
         }
         p {
             padding-bottom: 20px;
@@ -370,6 +380,31 @@ h1, h2 {
             transition-delay: 0.5s;
         }
     }
+
+    .section-7 {
+        background-color: lightgrey;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin: 0 0 10px 0;
+            color: #F82E16;
+        }
+        p {
+            margin: 10px 0 20px 0;
+        }
+        .cbu {
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+            p {
+                margin: 0
+            }
+        }
+    }
 }
 .footer {
     width: 100%;
@@ -379,7 +414,7 @@ h1, h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @include media-up(lg){
+    @include media-up(fold){
         height: 10vh;
         flex-direction: column;
     }

@@ -1,5 +1,6 @@
-    var vid = document.querySelector(".music");
-    vid.volume = 0.05;
+    var music = document.querySelector(".music");
+    music.play();
+    music.volume = 0.05;
 
 window.addEventListener('scroll', () =>{
     let header = document.querySelector('.header-container')
