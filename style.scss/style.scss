@@ -48,6 +48,7 @@ h1, h2 {
         height: 12vh;
         font-weight: bold;
         transition: all .3s;
+        z-index: 2000;
         @include media-up(xxl){
             height: 16vh;
         }
@@ -216,8 +217,16 @@ h1, h2 {
         height: 60vh;
         background-color: $colorGrey;
         overflow: hidden;
+        position: relative;
         @include media-up(xxl){
             height: 70vh;
+        }
+        #my-canvas {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
         }
         .article-4 {
             max-width: 900px;
@@ -256,6 +265,7 @@ h1, h2 {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+                z-index: 10;
                 h2 {
                     color: #F82E16;
                     margin-bottom: 50px;
@@ -395,12 +405,14 @@ h1, h2 {
         }
         p {
             margin: 10px 0 20px 0;
+            
         }
         .cbu {
             padding: 10px;
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+            z-index: 1000;
             p {
                 margin: 0
             }

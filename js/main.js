@@ -22,6 +22,10 @@ window.addEventListener('scroll', () =>{
     }
 });
 
+let confettiSettings = { target: 'my-canvas' };
+let confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+
 
 document.addEventListener('DOMContentLoaded', () => { 
     
