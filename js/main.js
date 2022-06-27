@@ -3,10 +3,9 @@ const music = new Audio('https://cdn.discordapp.com/attachments/9631376011523645
     window.addEventListener('scroll', () =>{
         if (window.scrollY > 0) {
             music.play();
-            music.autoplay = true;
+            music.autoplay = true; 
             music.volume = 0.05;
             music.loop = true;
-            //music.playbackRate = 1;
         }
     });
 
@@ -22,7 +21,7 @@ window.addEventListener('scroll', () =>{
     }
 });
 
-let confettiSettings = { target: 'my-canvas' };
+let confettiSettings = { target: 'my-canvas', clock: '15' };
 let confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
 

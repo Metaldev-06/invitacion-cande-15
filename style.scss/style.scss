@@ -405,15 +405,18 @@ h1, h2 {
         }
         p {
             margin: 10px 0 20px 0;
-            
+            width: 60%;
+            @include media-up(xxl){
+                width: 100%;
+            }
         }
         .cbu {
             padding: 10px;
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-            z-index: 1000;
             p {
+                width: 100%;
                 margin: 0
             }
         }
